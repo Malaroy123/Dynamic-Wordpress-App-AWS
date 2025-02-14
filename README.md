@@ -51,7 +51,8 @@ The deployment includes:
 
 - Create a Target Group and register EC2 instances.
 - Configure listener rules and health checks.
-
+- Update the health check path for the ALB to /wp-admin/install.php, otherwise, the health check may return as unhealthy if it stays set to the default.
+  
 ### 7. Set Up Route 53 & SSL
 
 - Register a domain and configure DNS records.
